@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll 搭建静态博客"
+title:  "Jekyll 搭建静态博客---之我的修改测试"
 date:   2015-02-15 22:14:54
 categories: jekyll
 excerpt: Jekyll Github 搭建静态博客 blog 高浩阳 使用多说评论系统 以及Jia分享插件 参考git教程
