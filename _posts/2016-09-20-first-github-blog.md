@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "我的第一个github博客"
+title:  "My first github blog"
 date:   2016-09-20 10:06:05
-categories: Front-end HTML CSS
+categories: jekyll
 ---
 
 # 记我的第一个Github博客
