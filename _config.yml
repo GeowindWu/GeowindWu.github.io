@@ -42,7 +42,7 @@ timezone:      null
 title: W's Blog
 subTitle: this is my private blog
 description: 它是基于 Jekyll 搭建起来的。记录所学知识,完美
-url: http://pizn.github.io
+url: https://geowindwu.github.io
 feed: /atom.xml
 
 #菜单配置
