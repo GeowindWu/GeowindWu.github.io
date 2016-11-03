@@ -2,7 +2,7 @@
 layout: post
 title: 我的工作日志
 description:进来能力提升不少,知识涨了很多.命令行的操作越来越熟练,Android,数据库,前端,后台,都有涉及,真是全栈工程师啊,哈哈哈
-keywords:  hello, wordpress
+keywords:  CEO, 能力,学习能力,成就感
 ---
 #今天很开心,终于成功利用github搭建了自己的博客#
 ### 而且github也越来越熟练###
