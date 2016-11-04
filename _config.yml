@@ -1,9 +1,11 @@
 # Where things are
 source:       .
 destination:  ./_site
-plugins:      ./_plugins
-layouts:      ./_layouts
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
 paginate:     8
+
+
 
 # Handling Reading
 safe:         false
