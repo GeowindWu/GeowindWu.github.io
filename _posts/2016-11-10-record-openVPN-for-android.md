@@ -1,8 +1,8 @@
 ---
-layout:post
+layout: post
 title: 记OpenVPN For Android 
 description: 公司为了我一个任务,在一个已经集成了OpenVPN的项目上加个功能,于是给了我代码,今天终于搞定了,讲道理,看代码的时间花了很长,现在终于算是基本懂了openVPN for android 的代码,但openVPN的相关知识还不太懂,有时间补一下
-keyword:vpn,openVPN,Android
+keyword: vpn,openVPN,Android
 ---
 ## 先讲讲openVPN源码的几个比较重要的类,也是我之前看代码时候做的笔记
 
