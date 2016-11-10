@@ -10,7 +10,8 @@ keyword: android,progressDialog
 				
 				
 * 从项目里面发现的,但是为了写详细的博客,在网上搜索了一篇文章,转过来了
-* 原链接[ProgressDialog使用总结](http://blog.csdn.net/caesardadi/article/details/11982721#)				
+* 原链接[ProgressDialog使用总结](http://blog.csdn.net/caesardadi/article/details/11982721#)	
+			
 ## ProgressDialog的使用 
 ### ProgressDialog 继承自AlertDialog，AlertDialog继承自Dialog,实现DialogInterface接口。
 
