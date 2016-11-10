@@ -31,11 +31,11 @@ keyword: vpn,openVPN,Android
 
 
 	
-### *无论是连接VPN还是重新连接VPN,都会用一个Intent 目标class是LaunchVPN
-而LaunchVPN是如何启动的呢,是调用系统类VpnService,调用方法prepare()返回一个Intent
-startActivityForResult(intent)就行
-(官方文档指定要用这个方法,怀疑是服务和能不能用startActivity的歇歇了,权威说明就这样用)
-启动activity后,在回调方法中,成功会执行     VPNLaunchHelper.startOpenVpn();*
+#### *无论是连接VPN还是重新连接VPN,都会用一个Intent 目标class是LaunchVPN
+#### *而LaunchVPN是如何启动的呢,是调用系统类VpnService,调用方法prepare()返回一个Intent
+#### *startActivityForResult(intent)就行
+#### *(官方文档指定要用这个方法,怀疑是服务和能不能用startActivity的歇歇了,权威说明就这样用)
+#### *启动activity后,在回调方法中,成功会执行     VPNLaunchHelper.startOpenVpn();
 	
 --------------------------------------------------------------
 	
