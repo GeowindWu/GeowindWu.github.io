@@ -1,53 +1,53 @@
 ---
 layout: post
-title:  AndroidÏÔÊ¾¼ÓÔØ¿ò
-description: ¼ÓÔØ¿òÊÇºÜ³£ÓÃµÄ,µ«×ÜÊÇ²»ÖªµÀĞ´ÄÄ¸ö,ÀÏÊÇÓÃ¶Ô»°¿òÀ´ÏÔÊ¾,ºÜ²»ºÃ,Õâ´ÎÌØµØ¼ÇÂ¼ÁËÒ»¸ö±È½ÏºÏÊÊµÄ¼ÓÔØ¿ò
+title:  Androidæ˜¾ç¤ºåŠ è½½æ¡†
+description: åŠ è½½æ¡†æ˜¯å¾ˆå¸¸ç”¨çš„,ä½†æ€»æ˜¯ä¸çŸ¥é“å†™å“ªä¸ª,è€æ˜¯ç”¨å¯¹è¯æ¡†æ¥æ˜¾ç¤º,å¾ˆä¸å¥½,è¿™æ¬¡ç‰¹åœ°è®°å½•äº†ä¸€ä¸ªæ¯”è¾ƒåˆé€‚çš„åŠ è½½æ¡†
 keyword: android,progressDialog
 ---
 
-#Android¼ÓÔØ¿ò--android.app.ProgressDialog
+#AndroidåŠ è½½æ¡†--android.app.ProgressDialog
 				
 				
 				
-*´ÓÏîÄ¿ÀïÃæ·¢ÏÖµÄ,µ«ÊÇÎªÁËĞ´ÏêÏ¸µÄ²©¿Í,ÔÚÍøÉÏËÑË÷ÁËÒ»ÆªÎÄÕÂ,×ª¹ıÀ´ÁË
-*Ô­Á´½Ó[ProgressDialogÊ¹ÓÃ×Ü½á](http://blog.csdn.net/caesardadi/article/details/11982721#)				
-##ProgressDialogµÄÊ¹ÓÃ 
-###ProgressDialog ¼Ì³Ğ×ÔAlertDialog£¬AlertDialog¼Ì³Ğ×ÔDialog,ÊµÏÖDialogInterface½Ó¿Ú¡£
+*ä»é¡¹ç›®é‡Œé¢å‘ç°çš„,ä½†æ˜¯ä¸ºäº†å†™è¯¦ç»†çš„åšå®¢,åœ¨ç½‘ä¸Šæœç´¢äº†ä¸€ç¯‡æ–‡ç« ,è½¬è¿‡æ¥äº†
+*åŸé“¾æ¥[ProgressDialogä½¿ç”¨æ€»ç»“](http://blog.csdn.net/caesardadi/article/details/11982721#)				
+##ProgressDialogçš„ä½¿ç”¨ 
+###ProgressDialog ç»§æ‰¿è‡ªAlertDialogï¼ŒAlertDialogç»§æ‰¿è‡ªDialog,å®ç°DialogInterfaceæ¥å£ã€‚
 
-###ProgressDialogµÄ´´½¨·½Ê½ÓĞÁ½ÖÖ£¬Ò»ÖÖÊÇnew Dialog ,Ò»ÖÖÊÇµ÷ÓÃDialogµÄ¾²Ì¬·½·¨Dialog.show()¡£		
+###ProgressDialogçš„åˆ›å»ºæ–¹å¼æœ‰ä¸¤ç§ï¼Œä¸€ç§æ˜¯new Dialog ,ä¸€ç§æ˜¯è°ƒç”¨Dialogçš„é™æ€æ–¹æ³•Dialog.show()ã€‚		
 
-####·½Ê½Ò»£ºnew Dialog  
+####æ–¹å¼ä¸€ï¼šnew Dialog  
     final ProgressDialog dialog = new ProgressDialog(this);  
     dialog.show(); 
 	
-####·½Ê½¶ş£ºÊ¹ÓÃ¾²Ì¬·½Ê½´´½¨²¢ÏÔÊ¾£¬ÕâÖÖ½ø¶ÈÌõÖ»ÄÜÊÇÔ²ĞÎÌõ,ÉèÖÃtitleºÍMessageÌáÊ¾ÄÚÈİ  
-    ProgressDialog dialog2 = ProgressDialog.show(this, "ÌáÊ¾", "ÕıÔÚµÇÂ½ÖĞ");  
+####æ–¹å¼äºŒï¼šä½¿ç”¨é™æ€æ–¹å¼åˆ›å»ºå¹¶æ˜¾ç¤ºï¼Œè¿™ç§è¿›åº¦æ¡åªèƒ½æ˜¯åœ†å½¢æ¡,è®¾ç½®titleå’ŒMessageæç¤ºå†…å®¹  
+    ProgressDialog dialog2 = ProgressDialog.show(this, "æç¤º", "æ­£åœ¨ç™»é™†ä¸­");  
 	
-####·½Ê½Èı Ê¹ÓÃ¾²Ì¬·½Ê½´´½¨²¢ÏÔÊ¾£¬ÕâÖÖ½ø¶ÈÌõÖ»ÄÜÊÇÔ²ĞÎÌõ,ÕâÀï×îºóÒ»¸ö²ÎÊıboolean indeterminateÉèÖÃÊÇ·ñÊÇ²»Ã÷È·µÄ×´Ì¬  
+####æ–¹å¼ä¸‰ ä½¿ç”¨é™æ€æ–¹å¼åˆ›å»ºå¹¶æ˜¾ç¤ºï¼Œè¿™ç§è¿›åº¦æ¡åªèƒ½æ˜¯åœ†å½¢æ¡,è¿™é‡Œæœ€åä¸€ä¸ªå‚æ•°boolean indeterminateè®¾ç½®æ˜¯å¦æ˜¯ä¸æ˜ç¡®çš„çŠ¶æ€  
     ProgressDialog dialog3 = ProgressDialog  
-            .show(this, "ÌáÊ¾", "ÕıÔÚµÇÂ½ÖĞ", false);  
+            .show(this, "æç¤º", "æ­£åœ¨ç™»é™†ä¸­", false);  
 			
-####·½Ê½ËÄ Ê¹ÓÃ¾²Ì¬·½Ê½´´½¨²¢ÏÔÊ¾£¬ÕâÖÖ½ø¶ÈÌõÖ»ÄÜÊÇÔ²ĞÎÌõ,ÕâÀï×îºóÒ»¸ö²ÎÊıboolean cancelable ÉèÖÃÊÇ·ñ½ø¶ÈÌõÊÇ¿ÉÒÔÈ¡ÏûµÄ  
-    ProgressDialog dialog4 = ProgressDialog.show(this, "ÌáÊ¾", "ÕıÔÚµÇÂ½ÖĞ",  
+####æ–¹å¼å›› ä½¿ç”¨é™æ€æ–¹å¼åˆ›å»ºå¹¶æ˜¾ç¤ºï¼Œè¿™ç§è¿›åº¦æ¡åªèƒ½æ˜¯åœ†å½¢æ¡,è¿™é‡Œæœ€åä¸€ä¸ªå‚æ•°boolean cancelable è®¾ç½®æ˜¯å¦è¿›åº¦æ¡æ˜¯å¯ä»¥å–æ¶ˆçš„  
+    ProgressDialog dialog4 = ProgressDialog.show(this, "æç¤º", "æ­£åœ¨ç™»é™†ä¸­",  
             false, true); 
 			
-####·½Ê½Îå Ê¹ÓÃ¾²Ì¬·½Ê½´´½¨²¢ÏÔÊ¾£¬ÕâÖÖ½ø¶ÈÌõÖ»ÄÜÊÇÔ²ĞÎÌõ,ÕâÀï×îºóÒ»¸ö²ÎÊı DialogInterface.OnCancelListener  
-####cancelListenerÓÃÓÚ¼àÌı½ø¶ÈÌõ±»È¡Ïû  
-    ProgressDialog dialog5 = ProgressDialog.show(this, "ÌáÊ¾", "ÕıÔÚµÇÂ½ÖĞ", true,  
+####æ–¹å¼äº” ä½¿ç”¨é™æ€æ–¹å¼åˆ›å»ºå¹¶æ˜¾ç¤ºï¼Œè¿™ç§è¿›åº¦æ¡åªèƒ½æ˜¯åœ†å½¢æ¡,è¿™é‡Œæœ€åä¸€ä¸ªå‚æ•° DialogInterface.OnCancelListener  
+####cancelListenerç”¨äºç›‘å¬è¿›åº¦æ¡è¢«å–æ¶ˆ  
+    ProgressDialog dialog5 = ProgressDialog.show(this, "æç¤º", "æ­£åœ¨ç™»é™†ä¸­", true,  
             true, cancelListener);  
 			
 			
-##ProgressDialogµÄÑùÊ½ÓĞÁ½ÖÖ£¬Ò»ÖÖÊÇÔ²ĞÎ²»Ã÷È·×´Ì¬£¬Ò»ÖÖÊÇË®Æ½½ø¶ÈÌõ×´Ì¬
+##ProgressDialogçš„æ ·å¼æœ‰ä¸¤ç§ï¼Œä¸€ç§æ˜¯åœ†å½¢ä¸æ˜ç¡®çŠ¶æ€ï¼Œä¸€ç§æ˜¯æ°´å¹³è¿›åº¦æ¡çŠ¶æ€
 
-###µÚÒ»ÖÖ·½Ê½£ºÔ²ĞÎ½ø¶ÈÌõ
+###ç¬¬ä¸€ç§æ–¹å¼ï¼šåœ†å½¢è¿›åº¦æ¡
 	final ProgressDialog dialog = new ProgressDialog(this);  
-        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);// ÉèÖÃ½ø¶ÈÌõµÄĞÎÊ½ÎªÔ²ĞÎ×ª¶¯µÄ½ø¶ÈÌõ  
-        dialog.setCancelable(true);// ÉèÖÃÊÇ·ñ¿ÉÒÔÍ¨¹ıµã»÷Back¼üÈ¡Ïû  
-        dialog.setCanceledOnTouchOutside(false);// ÉèÖÃÔÚµã»÷DialogÍâÊÇ·ñÈ¡ÏûDialog½ø¶ÈÌõ  
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);// è®¾ç½®è¿›åº¦æ¡çš„å½¢å¼ä¸ºåœ†å½¢è½¬åŠ¨çš„è¿›åº¦æ¡  
+        dialog.setCancelable(true);// è®¾ç½®æ˜¯å¦å¯ä»¥é€šè¿‡ç‚¹å‡»Backé”®å–æ¶ˆ  
+        dialog.setCanceledOnTouchOutside(false);// è®¾ç½®åœ¨ç‚¹å‡»Dialogå¤–æ˜¯å¦å–æ¶ˆDialogè¿›åº¦æ¡  
         dialog.setIcon(R.drawable.ic_launcher);//  
-        // ÉèÖÃÌáÊ¾µÄtitleµÄÍ¼±ê£¬Ä¬ÈÏÊÇÃ»ÓĞµÄ£¬Èç¹ûÃ»ÓĞÉèÖÃtitleµÄ»°Ö»ÉèÖÃIconÊÇ²»»áÏÔÊ¾Í¼±êµÄ  
-        dialog.setTitle("ÌáÊ¾");  
-        // dismiss¼àÌı  
+        // è®¾ç½®æç¤ºçš„titleçš„å›¾æ ‡ï¼Œé»˜è®¤æ˜¯æ²¡æœ‰çš„ï¼Œå¦‚æœæ²¡æœ‰è®¾ç½®titleçš„è¯åªè®¾ç½®Iconæ˜¯ä¸ä¼šæ˜¾ç¤ºå›¾æ ‡çš„  
+        dialog.setTitle("æç¤º");  
+        // dismissç›‘å¬  
         dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {  
   
             @Override  
@@ -56,7 +56,7 @@ keyword: android,progressDialog
   
             }  
         });  
-        // ¼àÌıKeyÊÂ¼ş±»´«µİ¸ødialog  
+        // ç›‘å¬Keyäº‹ä»¶è¢«ä¼ é€’ç»™dialog  
         dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {  
   
             @Override  
@@ -66,7 +66,7 @@ keyword: android,progressDialog
                 return false;  
             }  
         });  
-        // ¼àÌıcancelÊÂ¼ş  
+        // ç›‘å¬canceläº‹ä»¶  
         dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {  
   
             @Override  
@@ -75,8 +75,8 @@ keyword: android,progressDialog
   
             }  
         });  
-        //ÉèÖÃ¿Éµã»÷µÄ°´Å¥£¬×î¶àÓĞÈı¸ö(Ä¬ÈÏÇé¿öÏÂ)  
-        dialog.setButton(DialogInterface.BUTTON_POSITIVE, "È·¶¨",  
+        //è®¾ç½®å¯ç‚¹å‡»çš„æŒ‰é’®ï¼Œæœ€å¤šæœ‰ä¸‰ä¸ª(é»˜è®¤æƒ…å†µä¸‹)  
+        dialog.setButton(DialogInterface.BUTTON_POSITIVE, "ç¡®å®š",  
                 new DialogInterface.OnClickListener() {  
   
                     @Override  
@@ -85,7 +85,7 @@ keyword: android,progressDialog
   
                     }  
                 });  
-        dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "È¡Ïû",  
+        dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "å–æ¶ˆ",  
                 new DialogInterface.OnClickListener() {  
   
                     @Override  
@@ -94,7 +94,7 @@ keyword: android,progressDialog
   
                     }  
                 });  
-        dialog.setButton(DialogInterface.BUTTON_NEUTRAL, "ÖĞÁ¢",  
+        dialog.setButton(DialogInterface.BUTTON_NEUTRAL, "ä¸­ç«‹",  
                 new DialogInterface.OnClickListener() {  
   
                     @Override  
@@ -103,7 +103,7 @@ keyword: android,progressDialog
   
                     }  
                 });  
-        dialog.setMessage("ÕâÊÇÒ»¸öÔ²ĞÎ½ø¶ÈÌõ");  
+        dialog.setMessage("è¿™æ˜¯ä¸€ä¸ªåœ†å½¢è¿›åº¦æ¡");  
         dialog.show();  
         new Thread(new Runnable() {  
   
@@ -112,8 +112,8 @@ keyword: android,progressDialog
                 // TODO Auto-generated method stub  
                 try {  
                     Thread.sleep(5000);  
-                    // cancelºÍdismiss·½·¨±¾ÖÊ¶¼ÊÇÒ»ÑùµÄ£¬¶¼ÊÇ´ÓÆÁÄ»ÖĞÉ¾³ıDialog,Î¨Ò»µÄÇø±ğÊÇ  
-                    // µ÷ÓÃcancel·½·¨»á»Øµ÷DialogInterface.OnCancelListenerÈç¹û×¢²áµÄ»°,dismiss·½·¨²»»á»Øµô  
+                    // cancelå’Œdismissæ–¹æ³•æœ¬è´¨éƒ½æ˜¯ä¸€æ ·çš„ï¼Œéƒ½æ˜¯ä»å±å¹•ä¸­åˆ é™¤Dialog,å”¯ä¸€çš„åŒºåˆ«æ˜¯  
+                    // è°ƒç”¨cancelæ–¹æ³•ä¼šå›è°ƒDialogInterface.OnCancelListenerå¦‚æœæ³¨å†Œçš„è¯,dismissæ–¹æ³•ä¸ä¼šå›æ‰  
                     dialog.cancel();  
                     // dialog.dismiss();  
                 } catch (InterruptedException e) {  
@@ -127,16 +127,16 @@ keyword: android,progressDialog
 		
 		
 		
-###µÚ¶şÖÖ·½Ê½£ºË®Æ½½ø¶ÈÌõ
-	// ½ø¶ÈÌõ»¹ÓĞ¶ş¼¶½ø¶ÈÌõµÄÄÇÖÖĞÎÊ½£¬ÕâÀï¾Í²»ÑİÊ¾ÁË  
+###ç¬¬äºŒç§æ–¹å¼ï¼šæ°´å¹³è¿›åº¦æ¡
+	// è¿›åº¦æ¡è¿˜æœ‰äºŒçº§è¿›åº¦æ¡çš„é‚£ç§å½¢å¼ï¼Œè¿™é‡Œå°±ä¸æ¼”ç¤ºäº†  
     final ProgressDialog dialog = new ProgressDialog(this);  
-    dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);// ÉèÖÃË®Æ½½ø¶ÈÌõ  
-    dialog.setCancelable(true);// ÉèÖÃÊÇ·ñ¿ÉÒÔÍ¨¹ıµã»÷Back¼üÈ¡Ïû  
-    dialog.setCanceledOnTouchOutside(false);// ÉèÖÃÔÚµã»÷DialogÍâÊÇ·ñÈ¡ÏûDialog½ø¶ÈÌõ  
-    dialog.setIcon(R.drawable.ic_launcher);// ÉèÖÃÌáÊ¾µÄtitleµÄÍ¼±ê£¬Ä¬ÈÏÊÇÃ»ÓĞµÄ  
-    dialog.setTitle("ÌáÊ¾");  
+    dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);// è®¾ç½®æ°´å¹³è¿›åº¦æ¡  
+    dialog.setCancelable(true);// è®¾ç½®æ˜¯å¦å¯ä»¥é€šè¿‡ç‚¹å‡»Backé”®å–æ¶ˆ  
+    dialog.setCanceledOnTouchOutside(false);// è®¾ç½®åœ¨ç‚¹å‡»Dialogå¤–æ˜¯å¦å–æ¶ˆDialogè¿›åº¦æ¡  
+    dialog.setIcon(R.drawable.ic_launcher);// è®¾ç½®æç¤ºçš„titleçš„å›¾æ ‡ï¼Œé»˜è®¤æ˜¯æ²¡æœ‰çš„  
+    dialog.setTitle("æç¤º");  
     dialog.setMax(100);  
-    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "È·¶¨",  
+    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "ç¡®å®š",  
             new DialogInterface.OnClickListener() {  
   
                 @Override  
@@ -145,7 +145,7 @@ keyword: android,progressDialog
   
                 }  
             });  
-    dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "È¡Ïû",  
+    dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "å–æ¶ˆ",  
             new DialogInterface.OnClickListener() {  
   
                 @Override  
@@ -154,7 +154,7 @@ keyword: android,progressDialog
   
                 }  
             });  
-    dialog.setButton(DialogInterface.BUTTON_NEUTRAL, "ÖĞÁ¢",  
+    dialog.setButton(DialogInterface.BUTTON_NEUTRAL, "ä¸­ç«‹",  
             new DialogInterface.OnClickListener() {  
   
                 @Override  
@@ -163,7 +163,7 @@ keyword: android,progressDialog
   
                 }  
             });  
-    dialog.setMessage("ÕâÊÇÒ»¸öË®Æ½½ø¶ÈÌõ");  
+    dialog.setMessage("è¿™æ˜¯ä¸€ä¸ªæ°´å¹³è¿›åº¦æ¡");  
     dialog.show();  
     new Thread(new Runnable() {  
   
@@ -174,16 +174,16 @@ keyword: android,progressDialog
             while (i < 100) {  
                 try {  
                     Thread.sleep(200);  
-                    // ¸üĞÂ½ø¶ÈÌõµÄ½ø¶È,¿ÉÒÔÔÚ×ÓÏß³ÌÖĞ¸üĞÂ½ø¶ÈÌõ½ø¶È  
+                    // æ›´æ–°è¿›åº¦æ¡çš„è¿›åº¦,å¯ä»¥åœ¨å­çº¿ç¨‹ä¸­æ›´æ–°è¿›åº¦æ¡è¿›åº¦  
                     dialog.incrementProgressBy(1);  
-                    // dialog.incrementSecondaryProgressBy(10)//¶ş¼¶½ø¶ÈÌõ¸üĞÂ·½Ê½  
+                    // dialog.incrementSecondaryProgressBy(10)//äºŒçº§è¿›åº¦æ¡æ›´æ–°æ–¹å¼  
                     i++;  
   
                 } catch (Exception e) {  
                     // TODO: handle exception  
                 }  
             }  
-            // ÔÚ½ø¶ÈÌõ×ßÍêÊ±É¾³ıDialog  
+            // åœ¨è¿›åº¦æ¡èµ°å®Œæ—¶åˆ é™¤Dialog  
             dialog.dismiss();  
   
         }  
