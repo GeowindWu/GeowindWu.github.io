@@ -10,13 +10,13 @@ keyword: echart导出,导出图片到Excel
 * 今天说说怎么把图片导出去
 
 	
-	/**
-	 *  把以base64格式编码的图片写到excel中
+	
+	 * 把以base64格式编码的图片写到excel中
 	 * @param base64Str 被写出的base64格式的图表
 	 * @param work  目标工作薄
 	 * @param sheet 目标表格
 	 * @param rowIndex 当前处于目标表格的行
-	 */
+	 
 	public static void writeBase64ImageToExcel(String base64Str,Workbook work,Sheet sheet,int rowIndex ){
 		try{ 
 			// 对经过base64编码的字符串进行解码
