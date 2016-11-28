@@ -84,7 +84,7 @@ URLEncoder.encode(String s, String charsetName)
 
 ## HTTP 工具类的请求方法
 http
-----
+
 
 	public static InputStream postHttpRequestReturnStream(String url,
 				Map<String, String> params) throws Exception {
@@ -127,7 +127,7 @@ http
 
 
 https
------
+
 
 	public static InputStream postHttpsUrlReturnStream(String url,
 				Map<String, String> params) throws Exception {
