@@ -7,6 +7,8 @@ keyword: urlencode
 
 ## 对应JAVA的类,方法
 -------------------
+
+
 java.net.URLEncoder
 
 URLEncoder.encode(String s, String charsetName)
@@ -82,7 +84,7 @@ URLEncoder.encode(String s, String charsetName)
 
 ## HTTP 工具类的请求方法
 http
-====
+----
 
 	public static InputStream postHttpRequestReturnStream(String url,
 				Map<String, String> params) throws Exception {
