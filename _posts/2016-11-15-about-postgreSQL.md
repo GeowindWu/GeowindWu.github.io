@@ -4,8 +4,9 @@ title: SQL语句
 description: 公司项目用了postpreSQL数据库管理系统
 ---
 
-#做一个任务时候的一点心得
-## 任务是根据记录的插入时间查询出来,有当天的,本周的,本月的,所有的,需要一次性查出,开始用的是Union ALL ,后来被告知效率不高,用case When好,的确用case when 写比较好,sql语句也比较好看,收货就是学习了这两个语句 union 和 case when
+## 做一个任务时候的一点心得
+
+任务是根据记录的插入时间查询出来,有当天的,本周的,本月的,所有的,需要一次性查出,开始用的是Union ALL ,后来被告知效率不高,用case When好,的确用case when 写比较好,sql语句也比较好看,收货就是学习了这两个语句 union 和 case when
 
 当时用的代码
 			SELECT 
@@ -23,6 +24,7 @@ description: 公司项目用了postpreSQL数据库管理系统
 				from tbl_mobilealarmeventinfo
 																																																														GROUP BY 	ieventtype,streventname	
 																																																														)TMP
+																																																														
 ##写一些网上看到的MySQL的提高性能的方法
 ~~~ 嗨呀,忘了,微博上找不到那个连接了....
 以后吧,以后有相关知识再补上来
