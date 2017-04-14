@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring AOP
+title: spring AOP
 ---
 
 对spring aop的一些理解
