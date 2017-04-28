@@ -1,6 +1,8 @@
 ---
 layout: post
 title: SQL反模式--包闭表
+date: 2017-4-28
+categories: 数据库
 ---
 
 ### 评论系统的数据库设计
