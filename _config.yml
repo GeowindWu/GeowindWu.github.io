@@ -44,8 +44,8 @@ timezone:      null
 
 
 #站点基础配置
-title: W's Blog
-subTitle: this is my private blog
+title: 崇阳书院
+subTitle: 吴洪全的博客
 description: 它是基于 Jekyll 搭建起来的。记录所学知识,完美
 url: https://geowindwu.github.io
 feed: /atom.xml
