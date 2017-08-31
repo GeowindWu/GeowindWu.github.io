@@ -44,8 +44,8 @@ timezone:      null
 
 
 #站点基础配置
-title: 黄艳琳是我老婆
-subTitle: 吴洪全的个人表白墙
+title: 我们家黄艳琳
+subTitle: 吴洪全的生活记录墙
 description: 它是基于 Jekyll 搭建起来的。记录所学知识,完美
 url: https://geowindwu.github.io
 feed: /atom.xml
