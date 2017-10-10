@@ -3,6 +3,8 @@
  * @author: 	pizn(pizner@gmail.com)
  * @desctions:  This is the js source for pizn.me's index.
  */
+$("#top").lettering();
+$("#bottom").lettering();
 $(document).ready(function() {
         var content = '';
         content = '<div class="banner-line fadeIn" style="top: -80px; right: -151px;"></div>';

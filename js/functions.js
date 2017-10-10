@@ -138,3 +138,6 @@ function adjustCodePosition() {
 function showLoveU() {
 	$('#loveu').fadeIn(1500);
 }
+function showPic(){
+	$('picture').fadeIn(1000);
+}
