@@ -24,3 +24,6 @@ title: web项目中文乱码问题终极解决方案
  设置Content-Type 时，值都带上编码
  
  Content-Type :  *; charset=utf-8
+ 
+ **struts2 后台接收中文乱码**
+ 	这个配置<constant name="struts.i18n.encoding" value="UTF-8" />，一定要改为UTF-8
