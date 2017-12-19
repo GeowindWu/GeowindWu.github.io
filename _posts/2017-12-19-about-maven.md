@@ -81,5 +81,5 @@ title: 部署maven项目到tomcat
 
 　　> mvn tomcat7:redeploy  　　//第一次发布 tomcat7:deploy，再次发布 tomcat7:redeploy
 
----- 注意，这些是网上看到的，但是我执行最后的命令不行，最后差外网资料，改成了 mvn tomcat7:run-war 就行了。
-另外，需要先把war包放到webapps目录下，并先启动tomcat
+---- 注意，如果是在myeclipse的里面部署到tomcat，就执行mvn tomcat7:redeploy.（可以认为是开发模式，因为需要在myeclipse里面debug）
+	如果是采用把项目打成war包，放到tomcat的webapps目录下的方式，就执行 mvn tomcat7:run-war 就行了。
