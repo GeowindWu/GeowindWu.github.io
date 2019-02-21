@@ -34,8 +34,8 @@ yum install vsftpd -y
 
 ??ftp的配置文件主要有三个，位于/etc/vsftpd/目录下，分别是：
 
-ftpusers 该文件用来指定那些用户不能访问ftp服务器。
-user_list 该文件用来指示的默认账户在默认情况下也不能访问ftp
+ftpusers 该文件用来指定那些用户不能访问ftp服务器。黑名单
+user_list 该文件用来指示的默认账户在默认情况下也能访问ftp，白名单
 vsftpd.conf vsftpd的主配置文件
 4、以匿名用户登录
 
